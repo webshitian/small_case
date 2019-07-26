@@ -1,0 +1,345 @@
+/* 公共页面的样式 */
+
+/* 品优购页面字体主色调 */
+.col_rd {
+    color: #c81623 !important;
+}
+
+/* 头部工具栏样式部分开始 */
+.head_topbar {
+	height: 30px;
+	background: #f1f1f1;
+	border-bottom: 1px solid #ccc;
+	line-height: 30px;
+}
+.head_topbar .head_topbar_wel a:nth-child(3) {
+	color:red;
+}
+
+.head_topbar .heade_topbar_nav ul li {
+	float:left;
+}
+.head_topbar .heade_topbar_nav ul li i{
+	margin-right: 19px;
+	margin-left: 2px;
+}
+.head_topbar .heade_topbar_nav li.line {
+	width: 2px;
+    height: 12px;
+    background: #bfbfbf;
+    /* background: red; */
+    margin: 10px 14px;
+ 	
+}
+.shortcut .shortcut_nav li .iconfont {
+
+}
+/* 头部工具栏样式部分结束 */
+
+/*设置头部样式开始*/
+/*设置头部logo*/
+.head-header{
+	position: relative;
+	height: 165px;
+    border-bottom: 2px solid #b1191a;
+}
+.head .head-header_logo{
+	position:absolute; 
+	top:57px;
+	/*margin-bottom: 70px;*/
+}
+.head .head-header_logo h1{
+	display: block;
+	width: 175px;
+	height: 56px;
+	background:url(../images/logo.png) no-repeat;
+	font-size:0;
+}
+
+
+
+/*设置搜索框部分*/
+.head .head-header_search {
+	position:absolute;
+	top: 56px;
+	left: 730px;
+
+}
+.head-header_search{
+	width: 540px;
+}
+.head .head-header_search input[type="text"]{
+	float:left;
+	width:454px;
+	height:32px;
+	border: 2px solid #c81623;
+	border-right:2px;
+	text-indent: 1em;	
+	font-size: 14px;
+	
+}
+.head .head-header_search input[type="button"]{
+	
+	float:left;
+	width:80px;
+	height:36px;
+    border: 2px solid #c81623;
+   	background: #c81623;
+   	color: #FFFFFF;
+}
+
+.head-header_cart{
+	position: absolute;
+	top: 55px;
+	left: 1358px;
+	display: block;
+	width:140px;
+	height:35px;
+	border:1px solid #CCCCCC;
+	text-align: center;
+	line-height:36px;
+	background: #f7f7f7;
+	
+	
+}
+.head-header_cart a{
+	font-size:12px;
+}
+/*设置推荐子部分*/
+.head-header_recommend{
+	position:absolute;
+	top:99px;
+	left:740px;
+}
+.head-header_recommend ul li{
+	float: left;
+	padding-right: 22px;
+}
+
+/*设置内容头部导航部分*/
+.head-header_nav{
+	position:absolute;
+	top: 141px;
+	left: 680px;
+}
+.head-header_nav ul {
+	margin-left: 40px;
+}
+.head-header_nav ul li{
+	float: left;
+	padding-left: 40px;	
+}
+
+.head-header_nav ul li a{
+	font-size: 16px;
+}
+/*设置内容部分*/
+.content_top {
+	margin-bottom:25px;
+
+}
+.content_top img{
+	height: 120px;
+}
+.content_classify{
+	
+}
+.content .content_bottom ul li:nth-child(4n){
+	margin-right:0px;
+}
+.content .content_bottom ul li{
+	float: left;
+	width:290px;
+	height:460px;
+	margin-right:7px;
+	margin-bottom:25px;
+	
+} 
+.content .content_bottom ul li:hover{
+	outline:1px solid #e12228;
+}  
+.content .content_bottom ul li .content_bottom_top img{
+	margin-left: 7px;	
+}
+.content_bottom_center:first-child{
+	font-size:14px;
+	color:#cbcbcb;
+}
+.content_bottom_center{
+	padding:0 12px 0 13px;
+}
+.content_bottom_center p:first-child{
+	line-height:23px;
+	
+}
+.content_bottom_center p:nth-child(2){
+	font-size:21px;
+	color: #e60012;
+	margin-top:9px;
+}
+.content_bottom_center p:nth-child(2) span{
+	font-size:14px;
+	
+}
+.content_bottom_center p:nth-child(2) del{
+	font-size:14px;
+	color:#a4a4a4;
+	margin-left:8px;
+}
+/*.content_bottom_center .method{
+	vertical-align: middle;
+}*/
+.content_bottom_center .method{
+	margin: 9px 0;
+}
+.content_bottom_center .method .div1{
+	display: block;
+	width: 130px;
+	height: 10px;
+	border:1px solid #e12228;
+	
+    border-radius: 5px;
+    margin:3px 12px 0;
+}
+.content_bottom_center .method .div1 .div2{
+	width: 87%;
+	height: 10px;
+	background:#e12228;
+}
+.content_bottom_buttom button{
+	width:290px;
+	height: 51px;
+	color: #FFFDEF;
+	background: #b1191a;
+	margin-top: 12px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*设置头部样式结束*/
+
+
+/*设置页脚部分样式开始*/
+.footer{
+	background: #f5f5f5;
+	margin-top: 0px;
+}
+/*设置页脚的上部分*/
+.footer_top .h3_1{
+	display:inline;
+	width:49px;
+	height: 49px;
+	background:url(../images/icons.png) no-repeat -253px -3px;
+	font-size:0px;	
+	margin-right: 7px;
+	margin-left: 5%;
+}
+.footer_top .h3_2{
+	display:inline;
+	width:49px;
+	height: 49px;
+	background:url(../images/icons.png) no-repeat -255px -54px;
+	font-size:0px;	
+	margin-right: 7px;
+	margin-left: 5%;
+}
+.footer_top .h3_3{
+	display:inline;
+	width:49px;
+	height: 49px;
+	background:url(../images/icons.png) no-repeat -257px -106px;
+	font-size:0px;	
+	margin-right: 7px;
+	margin-left: 5%;
+}
+.footer_top .h3_4{
+	display:inline;
+	width:49px;
+	height: 49px;
+	background:url(../images/icons.png) no-repeat -258px -157px;
+	font-size:0px;	
+	margin-right: 7px;
+	margin-left: 5%;
+}
+.footer_top .h3_5{
+	display:inline;
+	width:49px;
+	height: 49px;
+	background:url(../images/icons.png) no-repeat -257px -209px;
+	font-size:0px;	
+	margin-right: 7px;
+	margin-left: 5%;
+}
+.footer_top .icon{
+
+	
+}
+.footer_top .icon p:first-child{
+	font-size: 14px;
+	font-weight:600;
+	color:#333333;
+	margin-bottom:3px;
+}
+.footer .footer_top ul{
+	height: 49px;
+	border-bottom: 1px solid #ededed;
+	padding: 29px 0;
+}
+
+/*设置页脚的中部分*/
+.footer_center dl{
+	float:left;
+	margin: 0 60px;
+	padding: 20px 0 23px 0;
+	
+}
+.footer_center{
+	border-bottom: 1px solid #ededed;
+}
+.footer_center dl dt{
+	font-size: 16px;
+	color: #333333;
+	padding-bottom: 13px;
+	
+}
+.footer_center dl dd{
+	padding-bottom:9px;
+}
+.footer_center dl:last-child{
+	text-align: center;
+}
+/*设置页脚的下部分*/
+.footer_bottom ul{
+	margin-left: 65px;
+	padding: 19px 0 15px 0;
+}
+.footer_bottom ul .line{
+	width: 2px;
+    height: 12px;
+    background: #bfbfbf;
+    /* background: red; */
+    margin: 4px 14px;
+}
+.footer_bottom ul li{
+	float: left;	
+}
+.footer_bottom p{
+	text-align: center;
+	padding-bottom:10px;
+}
+
+/*设置页脚部分样式结束*/
