@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<label for="userPwd">请输入密码:</label>
+		<input type="password"  id="userPwd"/>
+		<input type="button" value="显示密码" id="eye" />
+		<script type="text/javascript">
+			//1.获取元素
+			var userPwd = document.getElementById('userPwd');
+			var eye = document.getElementById('eye');
+			//2.事件三要素绑定事件
+			eye.onclick = function(){
+				if(userPwd.type === 'password'){
+					userPwd.type = 'text';
+					this.value = '隐藏密码';
+				}else{
+					userPwd.type = 'password';
+					this.value = '显示密码';
+				}
+			}
+		</script>
+	</body>
+</html>
