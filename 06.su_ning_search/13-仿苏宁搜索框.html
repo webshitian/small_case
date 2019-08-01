@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.search{
+				position: relative;
+			}
+			#searchTip{
+				width: 500px;
+				height: 300px;
+				border:1px solid #f90;
+				position: absolute;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="search">
+			<input id="searchInput" type="text" placeholder="获取，失去焦点触发" />
+			<div id="searchTip">
+				搜索提示盒子
+			</div>
+		</div>
+		<script>
+			//获取焦点  onfocus
+			//失去焦点  onblur
+			
+			var searchInput = document.getElementById('searchInput');
+			var searchTip = document.getElementById('searchTip');
+			
+			searchInput.onfocus = function(){
+				//console.log('获取焦点触发一次');
+				searchTip.style.display = 'block';
+			}
+			searchInput.onblur = function(){
+				//console.log('失去焦点触发一次');
+				searchTip.style.display = 'none';
+			}
+		</script>
+	</body>
+</html>
