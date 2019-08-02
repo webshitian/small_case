@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+				.style01 {
+					color: #FFFF00;
+					font-size: 18px;
+					background-color: red;
+					transition-duration: 1s;
+					transform: rotateX(360deg);				
+				}
+				.aa{
+					
+				}
+		</style>
+	</head>
+	<body>
+		<input id="btn" type="button" value="按钮" />
+		<input id="btn" type="button" value="按钮" />
+		<input id="btn" type="button" value="按钮" />
+		
+		<script type="text/javascript">
+			//排他思想：主要分两步
+			//		1.先排除所有，比如把全部的类名清空掉
+			//		2.确立当前通过this确立当前点击的那一个元素
+			
+			var inputs = document.getElementsByTagName('input');
+			//外面的循环用于遍历  元素，添加事件
+			for(var i = 0;i < inputs.length;i++){
+				var item = inputs[i];
+				item.onclick = function(){
+					//排他思想
+					//1.先排除所有 - 函数内的循环用来清空所有类名
+					for(var i = 0;i < inputs.length;i++){
+						var item = inputs[i];
+						item.className = ' ';
+					}
+					//2.在for循环清空类名后，再通过this确立当前点击的元素
+					this.className = 'style01';
+				}	
+			}
+			
+				
+		</script>
+	</body>
+</html>
