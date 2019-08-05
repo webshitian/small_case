@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .box {
+            margin: 50px;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="emoji">
+            <img src="img/01.gif" height="22" width="22" alt="" />
+            <img src="img/02.gif" height="22" width="22" alt="" />
+            <img src="img/03.gif" height="22" width="22" alt="" />
+            <img src="img/04.gif" height="22" width="22" alt="" />
+            <img src="img/05.gif" height="22" width="22" alt="" />
+            <img src="img/06.gif" height="22" width="22" alt="" />
+            <img src="img/07.gif" height="22" width="22" alt="" />
+            <img src="img/08.gif" height="22" width="22" alt="" />
+            <img src="img/09.gif" height="22" width="22" alt="" />
+            <img src="img/10.gif" height="22" width="22" alt="" />
+            <img src="img/11.gif" height="22" width="22" alt="" />
+            <img src="img/12.gif" height="22" width="22" alt="" />
+        </div>
+        <p><strong>请发言：</strong><img src="img/12.gif" height="22" width="22" alt="" /></p>
+    </div>
+    <script>
+        // 需求:点击那个图标,在页面中移除
+        //    添加元素:       父元素.appendChild(子元素);
+        //    克隆元素:       元素.cloneNode();   // 先把节点克隆一份新的到内存中,可以把新节点添加到页面
+
+        // 查找元素
+        var imgs = document.querySelectorAll('#emoji img');
+        var p = document.querySelector('p');
+
+        imgs.forEach(function(item){
+            item.onclick = function(){
+                // this
+                var newImg = this.cloneNode();
+                p.appendChild(newImg);
+            } 
+        });
+
+        
+
+    </script>
+</body>
+
+</html>
